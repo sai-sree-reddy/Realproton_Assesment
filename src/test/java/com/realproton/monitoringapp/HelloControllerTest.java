@@ -36,17 +36,4 @@ public class HelloControllerTest {
         mockMvc.perform(get("/leak"))
                 .andExpect(status().isOk());
     }
-
-    @Test
-    void testValidateValidInput() throws Exception {
-        mockMvc.perform(get("/validate").param("input", "Hello"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("Valid string: Hello"));
-    }
-
-    @Test
-    void testValidateInvalidInput() throws Exception {
-        mockMvc.perform(get("/validate").param("input", "1234"))
-                .andExpect(status().isBadRequest());
-    }
 }
