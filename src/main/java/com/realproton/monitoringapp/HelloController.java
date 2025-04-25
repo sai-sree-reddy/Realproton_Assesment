@@ -26,6 +26,7 @@ public class HelloController {
         return "CPU Stress Test Completed!";
     }
 
+    //Testing the pipeline
     @GetMapping("/leak")
     public String memoryLeak() {
         byte[] chunk = new byte[10 * 1024 * 1024]; // 10MB
