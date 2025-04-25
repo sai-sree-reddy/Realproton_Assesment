@@ -54,8 +54,6 @@ After logging into Grafana, you need to configure Prometheus as a data source an
 ### Importing the Dashboard
 
 1.  Click on the **plus icon (+)** in the left sidebar.
-2.  Select **Import**.
-3.  You can import a dashboard using a JSON file (if provided) or by entering the dashboard ID from the Grafana website (if you have created one). Alternatively, you can create a new dashboard manually.
 
     **To create a new dashboard manually (example):**
     1.  Click on **Create** in the left sidebar and select **Dashboard**.
